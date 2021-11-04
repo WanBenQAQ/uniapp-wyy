@@ -3,7 +3,7 @@
 		<musichead title="网易云音乐" :icon="false"></musichead>
 		<view class="container">
 			<scroll-view scroll-y="true">
-        <view class="index-search">
+        <view class="index-search" @tap="handlerToSearch">
 					<text class="iconfont icon-fangdajing"></text>
 					<input type="text" placeholder="搜索歌曲">
 				</view>
@@ -50,6 +50,11 @@
       handleToList(listId) {
 				uni.navigateTo({
 					url: '/pages/list/list?listId=' + listId
+				})
+			},
+			handlerToSearch() {
+				uni.navigateTo({
+					url: '/pages/search/search'
 				})
 			}
 		}

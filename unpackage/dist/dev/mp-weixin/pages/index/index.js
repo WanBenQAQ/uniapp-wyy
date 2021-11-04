@@ -11,9 +11,9 @@
 /* 9 */,
 /* 10 */,
 /* 11 */
-/*!**********************************************************************************!*\
-  !*** D:/workspace/uni-app-wyy/wyyMusic/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \**********************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/workspace/uni-app-wyy/uniapp-wyy/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26,9 +26,9 @@ createPage(_index.default);
 
 /***/ }),
 /* 12 */
-/*!***************************************************************!*\
-  !*** D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue ***!
-  \***************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66,9 +66,9 @@ component.options.__file = "pages/index/index.vue"
 
 /***/ }),
 /* 13 */
-/*!**********************************************************************************************************!*\
-  !*** D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
-  \**********************************************************************************************************/
+/*!************************************************************************************************************!*\
+  !*** D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87,9 +87,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 14 */
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -103,7 +103,7 @@ var components
 try {
   components = {
     musichead: function() {
-      return __webpack_require__.e(/*! import() | components/musichead/musichead */ "components/musichead/musichead").then(__webpack_require__.bind(null, /*! @/components/musichead/musichead.vue */ 30))
+      return __webpack_require__.e(/*! import() | components/musichead/musichead */ "components/musichead/musichead").then(__webpack_require__.bind(null, /*! @/components/musichead/musichead.vue */ 38))
     }
   }
 } catch (e) {
@@ -136,9 +136,9 @@ render._withStripped = true
 
 /***/ }),
 /* 15 */
-/*!****************************************************************************************!*\
-  !*** D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -151,9 +151,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 16 */
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -217,7 +217,7 @@ var _api = __webpack_require__(/*! @/common/api.js */ 18); //
 //
 //
 //
-var musichead = function musichead() {__webpack_require__.e(/*! require.ensure | components/musichead/musichead */ "components/musichead/musichead").then((function () {return resolve(__webpack_require__(/*! @/components/musichead/musichead.vue */ 30));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { topList: [] };}, components: { musichead: musichead }, onLoad: function onLoad() {var _this = this;(0, _api.topList)().then(function (res) {if (res.length) {_this.topList = res;}});}, methods: { handleToList: function handleToList(listId) {uni.navigateTo({ url: '/pages/list/list?listId=' + listId });} } };exports.default = _default;
+var musichead = function musichead() {__webpack_require__.e(/*! require.ensure | components/musichead/musichead */ "components/musichead/musichead").then((function () {return resolve(__webpack_require__(/*! @/components/musichead/musichead.vue */ 38));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { topList: [] };}, components: { musichead: musichead }, onLoad: function onLoad() {var _this = this;(0, _api.topList)().then(function (res) {if (res.length) {_this.topList = res;}});}, methods: { handleToList: function handleToList(listId) {uni.navigateTo({ url: '/pages/list/list?listId=' + listId });}, handlerToSearch: function handlerToSearch() {uni.navigateTo({ url: '/pages/search/search' });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
@@ -225,9 +225,9 @@ var musichead = function musichead() {__webpack_require__.e(/*! require.ensure |
 /* 18 */,
 /* 19 */,
 /* 20 */
-/*!************************************************************************************************************************!*\
-  !*** D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
-  \************************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -240,9 +240,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 21 */
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/wyyMusic/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workspace/uni-app-wyy/uniapp-wyy/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

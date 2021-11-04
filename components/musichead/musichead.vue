@@ -1,6 +1,6 @@
 <template>
 	<view class="music-head" :style="{ color: color }">
-		<view v-if="icon" class="music-head-icon">
+		<view v-if="icon" class="music-head-icon" :class="{ 'music-head-iconblack': iconblack }">
 			<text class="iconfont icon-zuojiantou" @tap="handleToBack"></text> | 
 			 <text class="iconfont icon-shouye" @tap="handleToHome"></text>
 		</view>
@@ -11,7 +11,7 @@
 <script>
 	export default {
 		name:"musichead",
-		props: ['title', 'icon', 'color'],
+		props: ['title', 'icon', 'color', 'iconblack'],
 		data() {
 			return {
 				
@@ -52,5 +52,10 @@
 		border-radius: 15px;
 		display: flex;
 		justify-content: space-evenly;
+	}
+	.music-head-iconblack {
+		color: #000;
+		border: 1px solid #eaeaea;
+		background-color: #fff;
 	}
 </style>

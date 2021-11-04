@@ -30,7 +30,7 @@
 		top: 0;
 		background-size: cover;
 		background-position: center 0;
-		filter: blur(10px); /* 图片模糊 */
+		filter: blur(20px); /* 图片模糊 */
 		transform: scale(1.2);
 	}
 </style>

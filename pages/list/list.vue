@@ -2,12 +2,12 @@
 	<view class="list">
 		<view class="fixbg" :style="{ backgroundImage : 'url('+ playlist.coverImgUrl +')' }"></view>
 		<musichead title="歌单" :icon="true" color="white"></musichead>
-		<view class="container">
+		<view class="container" v-show="!isLoading">
 			<scroll-view scroll-y="true">
 				<view class="list-head">
 					<view class="list-head-img">
 						<image :src="playlist.coverImgUrl" mode=""></image>
-						<text class="iconfont icon-yousanjiao">{{ playlist.playCount }}</text>
+						<text class="iconfont icon-yousanjiao">{{ playlist.playCount | formatCount }}</text>
 					</view>
 					<view class="list-head-text">
 						<view>{{ playlist.name }}</view>
@@ -34,29 +34,28 @@
 						<text>(共{{ playlist.trackCount }}首)</text>
 					</view>
 					
-					<view class="list-music-item" v-for="(item, index) in playlist.tracks" :key="index">
+					<view class="list-music-item" v-for="(item, index) in playlist.tracks" :key="index" @tap="handleToDetail(item.id)">
 						<view class="list-music-top">{{ index + 1 }}</view>
 						<view class="list-music-song">
 							<view>{{ item.name }}</view>
 							<view>
-								<image v-if="privileges[index].flag > 60 && privileges[index].flag < 70 " src="../../static/dujia.png" mode=""></image>
-								<image v-if="privileges[index].maxbr == 999000" src="../../static/sq.png" mode=""></image>
+								<image v-if="privileges[index].flag > 60 && privileges[index].flag < 70 " src="~@/static/dujia.png" mode=""></image>
+								<image v-if="privileges[index].maxbr == 999000" src="~@/static/sq.png" mode=""></image>
 								{{ item.ar[0].name }} - {{ item.name }}
 							</view>
 						</view>
 						<text class="iconfont icon-bofangqi-bofangshu"></text>
 					</view>
-					
 				</view>
 			</scroll-view>
-		</view>	
+		</view>
 	</view>
 </template>
 
 <script>
 	import '@/common/iconfont.css'
 	import musichead from '@/components/musichead/musichead.vue'
-	import { list } from '../../common/api.js'
+	import { list } from '@/common/api.js'
 	export default {
 		data() {
 			return {
@@ -67,23 +66,47 @@
 						avatarUrl: ''
 					}
 				},
-				privileges: []
+				privileges: [],
+				isLoading: true
 			}
 		},
 		components: {
 			musichead
 		},
 		onLoad(options) {
+			uni.showLoading({
+				title: '正在加载...',
+				
+			});
 			list(options.listId).then((res) => {
 				if (res[1].data.code == '200') {
-					console.log(res)
 					this.playlist = res[1].data.playlist
 					this.privileges = res[1].data.privileges
+					this.$store.commit('INIT_TOPLISTIDS', res[1].data.playlist.trackIds)
+					this.isLoading = false
+					uni.hideLoading()
 				}
 			})
 		},
 		methods: {
-			
+			handleToDetail(songId) {
+				uni.navigateTo({
+					url: '/pages/detail/detail?songId=' + songId
+				});
+			}
+		},
+		filters: {
+			formatCount(value) {
+				if( value >= 10000 && value < 100000000 ) {
+					value /= 1000
+					return value.toFixed(1) + '万'
+				} else if ( value > 100000000 ) {
+					value /= 100000000
+					return value.toFixed(1) + '亿'
+				} else {
+					return value
+				}
+			}
 		}
 	}
 </script>
@@ -197,20 +220,19 @@
 		text-overflow: ellipsis;  /* 加省略号，配合overflow: hidden */
 	}
 	.list-music-song view:nth-child(2) {
-		display: flex;
 		flex-wrap: wrap;  /* 正常换行 */
 		font-size: 20rpx;
 		align-items: center;
 		width: 70vw;
 		white-space: nowrap;  /* 规定内容连续向后展示,不会默认换行 */
 		overflow: hidden;
-		/* text-overflow: ellipsis;  加省略号，配合overflow: hidden，不能配合弹性布局使用 */
+		text-overflow: ellipsis;  /* 加省略号，配合overflow: hidden，不能配合弹性布局使用 */
 	}
 	.list-music-song view:nth-child(2) image {
 		width: 32rpx;
 		height: 20rpx;
 		margin-right: 10rpx;
-		flex-shrink: 0;  /* 定义弹性盒子内部子元素的缩小比例,设置为0时就是不缩小,默认为1 */
+		/* flex-shrink: 0;  定义弹性盒子内部子元素的缩小比例,设置为0时就是不缩小,默认为1 */
 	}
 	.list-music-item text {
 		font-size: 50rpx;
